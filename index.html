@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Calculadora de Compras</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Computador Gamer</h1>
+    <div class="imagen">
+      <img src="./img/pcgamer.jpg" alt="imagen">
+    </div>
+    <form id="form">
+      <label>Cantidad:</label>
+      <input type="number" id="cantidad" />
+      <br />
+      <label>Color:</label>
+      <input list="colores" id="color" />
+      <datalist id="colores">
+        <option value="Rojo"></option>
+        <option value="Azul"></option>
+        <option value="Verde"></option>
+        <option value="Amarillo"></option>
+        <option value="Negro"></option>
+      </datalist>
+      <br />
+      <button type="button" id="calcular">Calcular Total</button>
+    </form>
+    <div id="resultado">
+      <h2>Resumen de la Compra</h2>
+      <p>Cantidad: <span id="cantidad-resumen"></span></p>
+      <p>Color: <span id="color-resumen"></span></p>
+      <p>Total a Pagar: <span id="total-resumen"></span></p>
+      <div id="circulo"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
